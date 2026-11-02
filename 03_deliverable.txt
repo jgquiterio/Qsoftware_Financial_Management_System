@@ -1,0 +1,33 @@
+# ENTREGAS DO PROJETO
+**Projeto:** PRJ-0004 — Qsoftware Financial Management System
+
+## 1. PLANEJAMENTO
+- E01 — Escopo do projeto.
+- E02 — Requisitos funcionais e não funcionais.
+- E03 — Regras de negócio.
+- E04 — Critérios de aceite.
+
+## 2. DESENVOLVIMENTO
+- E05 — Configuração do ambiente Laravel 12.
+- E06 — Configuração do banco de dados SQLite.
+- E07 — Estrutura do banco de dados.
+- E08 — Interface do dashboard financeiro.
+- E09 — Cadastro de receitas.
+- E10 — Cadastro de despesas.
+- E11 — Listagem de movimentações.
+- E12 — Edição e exclusão de movimentações.
+- E13 — Cálculo dos indicadores financeiros.
+
+## 3. TESTES E VALIDAÇÃO
+- E14 — Testes funcionais.
+- E15 — Validação das regras de negócio.
+- E16 — Validação HTML pelo W3C.
+- E17 — Validação CSS pelo W3C.
+- E18 — Validação JavaScript.
+- E19 — Testes de responsividade.
+
+## 4. FINALIZAÇÃO
+- E20 — Revisão geral do sistema.
+- E21 — Documentação técnica.
+- E22 — Publicação do projeto no GitHub.
+- E23 — Preparação da apresentação para o portfólio Upwork.

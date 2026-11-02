@@ -1,0 +1,19 @@
+PROJETO: Financial Management System
+ID: PRJ-0004
+EMPRESA: Qsoftware
+
+OBJETIVO:
+Desenvolver um sistema web simples para controle financeiro pessoal.
+
+FUNCIONALIDADES:
+1. Cadastro de receitas.
+2. Cadastro de despesas.
+3. Listagem de movimentações.
+4. Edição e exclusão de movimentações.
+5. Dashboard com receitas, despesas e saldo atual.
+
+TECNOLOGIAS:
+Laravel 12, PHP 8.2, SQLite, Blade e Bootstrap 5.
+
+ESCOPO:
+MVP de controle financeiro pessoal.

@@ -1,0 +1,50 @@
+# REQUISITOS DO PROJETO
+**Projeto:** PRJ-0004 — Qsoftware Financial Management System
+
+## 1. REQUISITOS FUNCIONAIS
+
+- RF01 — O sistema deve permitir cadastrar receitas.
+- RF02 — O sistema deve permitir cadastrar despesas.
+- RF03 — O sistema deve permitir informar descrição, valor, data e categoria da movimentação.
+- RF04 — O sistema deve permitir listar todas as movimentações financeiras.
+- RF05 — O sistema deve permitir editar movimentações existentes.
+- RF06 — O sistema deve permitir excluir movimentações.
+- RF07 — O sistema deve exibir o total de receitas.
+- RF08 — O sistema deve exibir o total de despesas.
+- RF09 — O sistema deve calcular e exibir o saldo financeiro atual.
+
+## 2. REQUISITOS NÃO FUNCIONAIS
+
+- RNF01 — O sistema deve ser desenvolvido utilizando Laravel 12.
+- RNF02 — O sistema deve utilizar PHP 8.2.
+- RNF03 — O banco de dados deve utilizar SQLite.
+- RNF04 — A interface deve utilizar Blade e Bootstrap 5.
+- RNF05 — O sistema deve possuir interface responsiva.
+- RNF06 — O código deve seguir boas práticas de organização do Laravel.
+- RNF07 — Os valores financeiros devem utilizar precisão adequada para moeda.
+
+## 3. REGRAS DE NEGÓCIO
+
+- RN01 — Toda movimentação deve ser classificada como receita ou despesa.
+- RN02 — Toda movimentação deve possuir descrição, valor, data e categoria.
+- RN03 — O valor da movimentação deve ser maior que zero.
+- RN04 — Receitas devem aumentar o saldo financeiro.
+- RN05 — Despesas devem reduzir o saldo financeiro.
+- RN06 — O saldo deve ser calculado pela diferença entre o total de receitas e o total de despesas.
+- RN07 — A exclusão de uma movimentação deve atualizar os totais e o saldo do dashboard.
+- RN08 — A edição de uma movimentação deve atualizar os valores apresentados no dashboard.
+
+## 4. CRITÉRIOS DE ACEITE
+
+- CA01 — Deve ser possível cadastrar uma receita com todos os campos obrigatórios.
+- CA02 — Deve ser possível cadastrar uma despesa com todos os campos obrigatórios.
+- CA03 — O sistema deve impedir o cadastro de movimentações com valores iguais ou inferiores a zero.
+- CA04 — As movimentações cadastradas devem aparecer corretamente na listagem.
+- CA05 — Deve ser possível editar uma movimentação existente.
+- CA06 — Deve ser possível excluir uma movimentação existente.
+- CA07 — O dashboard deve apresentar corretamente o total de receitas.
+- CA08 — O dashboard deve apresentar corretamente o total de despesas.
+- CA09 — O saldo deve corresponder ao total de receitas menos o total de despesas.
+- CA10 — Alterações e exclusões devem refletir imediatamente nos indicadores financeiros.
+- CA11 — As telas devem funcionar adequadamente em computadores e dispositivos móveis.
+- CA12 — O sistema deve passar pelos testes funcionais definidos para o projeto.
