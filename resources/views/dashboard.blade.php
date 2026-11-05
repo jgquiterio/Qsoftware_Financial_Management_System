@@ -15,7 +15,7 @@
             <div class="card border-0 shadow-sm">
                 <div class="card-body">
                     <h6 class="text-muted">Total de Receitas</h6>
-                    <h3 class="text-success fw-bold">R$ 0,00</h3>
+                    <h3 class="text-success fw-bold">R$ {{ number_format($totalIncome, 2, ',', '.')}}</h3>
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@
             <div class="card border-0 shadow-sm">
                 <div class="card-body">
                     <h6 class="text-muted">Total de Despesas</h6>
-                    <h3 class="text-danger fw-bold">R$ 0,00</h3>
+                    <h3 class="text-danger fw-bold">R$ {{ number_format($totalExpense, 2, ',', '.')}}</h3>
                 </div>
             </div>
         </div>
@@ -33,7 +33,7 @@
             <div class="card border-0 shadow-sm">
                 <div class="card-body">
                     <h6 class="text-muted">Saldo Atual</h6>
-                    <h3 class="text-primary fw-bold">R$ 0,00</h3>
+                    <h3 class="text-primary fw-bold">R$ {{ number_format($balance, 2, ',', '.')}}</h3>
                 </div>
             </div>
         </div>

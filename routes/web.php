@@ -1,5 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
 
-Route::view('/', 'dashboard')->name('dashboard');
+Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
