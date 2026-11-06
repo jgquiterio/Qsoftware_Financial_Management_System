@@ -4,9 +4,21 @@
 
 @section('content')
 
+    @if (session('success'))
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{ session('success') }}
+
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+    @endif
+
     <div class="mb-4">
         <h2 class="fw-bold">Dashboard Financeiro</h2>
         <p class="text-muted">Visão geral das suas movimentações financeiras.</p>
+
+        <a href="{{ route('incomes.create') }}" class="btn btn-success">
+            <i class="bi bi-plus-circle"></i> Nova Receita
+        </a>
     </div>
 
     <div class="row g-3">
