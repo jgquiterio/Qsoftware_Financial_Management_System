@@ -19,6 +19,15 @@
         <a href="{{ route('incomes.create') }}" class="btn btn-success">
             <i class="bi bi-plus-circle"></i> Nova Receita
         </a>
+
+        <a href="{{ route('incomes.index') }}" class="btn btn-outline-success ms-2">
+            Minhas Receitas
+        </a>
+
+	<a href="{{ route('expenses.create') }}" class="btn btn-outline-danger ms-2">
+    	    Nova Despesa
+	</a>
+
     </div>
 
     <div class="row g-3">
