@@ -21,6 +21,7 @@
                             <th>Data</th>
                             <th>Tipo</th>
                             <th>Valor</th>
+			    <th>Ações</th>
                         </tr>
                     </thead>
 
@@ -40,10 +41,17 @@
                                 <td>
                                     R$ {{ number_format($transaction->amount, 2, ',', '.') }}
                                 </td>
+				<td>
+    				    <a href="{{ route('transactions.show', $transaction->id) }}"
+				    class="btn btn-sm btn-primary">
+        				Detalhes
+    				    </a>
+				</td>
+
                             </tr>
                         @empty
                             <tr>
-                                <td colspan="5" class="text-center text-muted">
+                                <td colspan="6" class="text-center text-muted">
                                     Nenhuma movimentação cadastrada.
                                 </td>
                             </tr>

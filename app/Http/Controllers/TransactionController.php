@@ -16,4 +16,13 @@ class TransactionController extends Controller
 	return view('transactions.index', $data);
     }
 
+    public function show($id)
+    {
+        $data = [
+            'transaction' => Transaction::findOrFail($id),
+        ];
+
+        return view('transactions.show', $data);
+    }
+
 }
