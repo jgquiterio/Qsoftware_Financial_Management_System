@@ -24,8 +24,16 @@
             Minhas Receitas
         </a>
 
-	<a href="{{ route('expenses.create') }}" class="btn btn-outline-danger ms-2">
+	<a href="{{ route('expenses.create') }}" class="btn btn-danger ms-2">
     	    Nova Despesa
+	</a>
+
+	<a href="{{ route('expenses.index') }}" class="btn btn-outline-danger ms-2">
+	    Minhas Despesas
+	</a>
+
+	<a href="{{  route('transactions.index') }}" class="btn btn-dark">
+	    Todas as Movimentações
 	</a>
 
     </div>

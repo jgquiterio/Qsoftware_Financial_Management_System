@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\IncomeController;
 use App\Http\Controllers\ExpenseController;
+use App\Http\Controllers\TransactionController;
 
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 
@@ -21,3 +22,5 @@ Route::get('/expenses', [ExpenseController::class, 'index'])->name('expenses.ind
 Route::get('/expenses/{id}/edit', [ExpenseController::class, 'edit'])->name('expenses.edit');
 Route::put('/expenses/{id}', [ExpenseController::class, 'update'])->name('expenses.update');
 Route::delete('/expenses/{id}', [ExpenseController::class, 'destroy'])->name('expenses.destroy');
+
+Route::get('/transactions', [TransactionController::class, 'index'])->name('transactions.index');
