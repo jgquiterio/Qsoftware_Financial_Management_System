@@ -17,3 +17,7 @@ Route::delete('/incomes/{id}', [IncomeController::class, 'destroy'])->name('inco
 
 Route::get('/expenses/create', [ExpenseController::class, 'create'])->name('expenses.create');
 Route::post('/expenses', [ExpenseController::class, 'store'])->name('expenses.store');
+Route::get('/expenses', [ExpenseController::class, 'index'])->name('expenses.index');
+Route::get('/expenses/{id}/edit', [ExpenseController::class, 'edit'])->name('expenses.edit');
+Route::put('/expenses/{id}', [ExpenseController::class, 'update'])->name('expenses.update');
+Route::delete('/expenses/{id}', [ExpenseController::class, 'destroy'])->name('expenses.destroy');
